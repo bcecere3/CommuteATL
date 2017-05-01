@@ -1,0 +1,63 @@
+<div class="section occupyVH" ng-show="!hasFav">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 center">
+        <h5 style="opacity: 0.4">Add a station to your Favorites using the '+' on the screen.</h5>
+        <!--<a class="btn-floating btn-large waves-effect waves-light grey lighten-3 white-text disabled" disabled><i class="material-icons">add</i></a>-->
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section occupyVH" ng-show="hasFav">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h5>Favorite Stations</h5>
+        <ul class="collection">
+          <li class="collection-item" ng-repeat="st in prefs.stations" style="text-transform: capitalize"><b>{{st.station}}</b><br>
+            <a href="javascript:void(0)" ng-click="removeRootStation($index)"><i class="material-icons right grey-text text-lighten-1" style="margin-top: -15px">delete</i></a>
+            <span ng-if="st.times.length > 0" ng-repeat="t in st.times">Train arriving in - {{t}}<br></span>
+            <span ng-if="st.times.length== 0"><em>No train data available</em><br></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col">
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large marta-blue white-text" data-target='addFav' modal>
+      <i class="large material-icons">add</i>
+    </a>
+  </div>
+</div>
+
+<div id="addFav" class="modal">
+  <form novalidate class="addFavForm">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col s12 grey lighten-3" input-field style="padding-top: 10px">
+        <select class="" ng-model="favStation.name" material-select>
+          <option ng-repeat="s in stations" value="{{s}}">{{s}}</option>
+        </select>
+        <label class="blue-text text-darken-1" style="font-size: 14px">Pick a station</label>
+        <a class="btn blue darken-1 right" ng-disabled="!favStation.name" ng-click="addStation(favStation.name)" style="margin-bottom: 10px !important">Add</a>
+      </div>
+    </div>
+    <div class="row" ng-show="selectedStations.length > 0">
+      <div class="col s12" style="padding: 0 !important">
+        <ul class="collection">
+          <li class="collection-item" ng-repeat="s in selectedStations">{{s}}
+            <a href="javascript:void(0)" ng-click="removeStation($index)"><i class="material-icons right grey-text text-lighten-1">delete</i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <a href="javascript:void(0)" ng-disabled="selectedStations.length == 0" class="modal-action modal-close btn marta-blue white-text" ng-click="saveStations()">Save</a>
+    <a href="javascript:void(0)" class=" modal-action modal-close btn-flat grey-text text-lighten-1">cancel</a>
+
+  </div>
+    </form>
+</div>

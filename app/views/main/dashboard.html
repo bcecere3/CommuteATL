@@ -1,0 +1,100 @@
+<div class="section occupyVH">
+  <div class="container">
+    <div class="row">
+      <div  class="col s12">
+        <!--Current commute card that displays after the setup process-->
+        <div class="card" ng-show="setupComplete" style="padding-bottom: 15px">
+          <div class="card-content" style="padding-bottom: 10px !important;">
+            <span class="card-title">Current Commute To Work</span>
+            <ul class="collection" style="border: none !important">
+              <li class="collection-item nb" ng-show="hasTrain"><i class="material-icons left">train</i>via <b>Brookhaven Station</b> <span class="right">{{transitTime}}</span></li>
+              <li class="collection-item nb" ng-show="hasCar"><i class="material-icons left">directions_car</i>via <b>Car</b> <span class="right">45 min</span></li>
+              <li class="collection-item nb" ng-show="hasBus"><i class="material-icons left">directions_bus</i>via <b>Bus</b> <span class="right">{{transitTime}}</span></li>
+              <li class="collection-item nb" ng-show="hasBike"><i class="material-icons left">directions_bike</i>via <b>Bike</b> <span class="right">{{bikingTime}}</span></li>
+              <li class="collection-item nb" ng-show="hasWalk"><i class="material-icons left">directions_walk</i>via <b>Walking</b> <span class="right">{{walkingTime}}</span></li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <a href="#" ui-sref="main.myCommute" ng-if="setupComplete">Details</a>
+          </div>
+        </div>
+        <!--Current commute card that displays before the setup process-->
+        <div class="card orange darken-1" ng-show="!setupComplete" style="padding-bottom: 15px">
+          <div class="card-content center" style="padding-bottom: 10px !important; padding-top: 85px; position: relative">
+            <i class="material-icons white-text custom-i" style="top: 25px; z-index: 0; font-size: 60px">near_me</i>
+            <h4 class="white-text">Current Commute</h4>
+            <h6 style="opacity: 0.7; font-size: 18px" class="white-text">Set up your commute to get a glimpse of travel times to work based on different transit methods.</h6>
+          </div>
+          <div class="card-action center">
+            <a href="#" ui-sref="main.setupCommute" class="btn-flat white orange-text text-darken-1" style="margin: 0 auto !important">Set Up Commute</a>
+          </div>
+        </div>
+      </div>
+      <div  class="col s12">
+        <div class="card blue darken-1" ng-show="!hasFav" style="padding-bottom: 15px">
+          <div class="card-content center" style="padding-bottom: 10px !important; padding-top: 85px; position: relative">
+            <!--<span class="card-title">Current Commute To Work</span>-->
+            <i class="material-icons white-text custom-i" style="top: 25px; z-index: 0; font-size: 60px">favorite</i>
+            <i class="material-icons blue-text darken-1 custom-i" style="top: 36px">train</i>
+            <h4 class="white-text">Favorite Stations</h4>
+            <h6 style="opacity: 0.7; font-size: 18px" class="white-text">Add favorite stations to see next train arrivals at a glance. Knowing arrival times help you decide when to leave the house.</h6>
+          </div>
+          <div class="card-action center">
+            <a href="#" ui-sref="main.favorites" ng-if="!hasFav" class="btn-flat white white-text" style="margin: 0 auto !important">Add A Favorite Station</a>
+          </div>
+        </div>
+        <div class="card"  ng-show="hasFav">
+          <div class="card-content" style="padding-bottom: 10px !important;">
+            <span class="card-title">Favorite Stations</span>
+            <ul class="collection" style="border: none !important" ng-show="hasFav">
+              <li class="collection-item nb" ng-repeat="s in prefs.stations"><b style="text-transform: capitalize">{{s.station}}</b><span class="right" ng-if="s.times.length >= 1">Next Arrival: {{s.times[0]}}</span>
+                <span class="right" ng-if="s.times.length == 0"><em>n/a</em></span><br>
+                <span style="color: rgba(0,0,0,0.54)"><em>Depart in <b>{{$index*2 + 10 }} min</b></em></span>
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <a href="#" ui-sref="main.favorites">Manage Favorites</a>
+          </div>
+        </div>
+      </div>
+      <!--<div  class="col s12">-->
+        <!--<a ui-sref="main.schedules" href="#">-->
+        <!--<div class="card">-->
+          <!--<div class="card-content" style="padding-bottom: 10px !important;">-->
+            <!--<span class="card-title"><i class="material-icons left" style="font-size: 30px; line-height: 46px; opacity: 0.87;">alarm</i> View Transit Schedules</span>-->
+            <!--</div>-->
+        <!--</div>-->
+          <!--</a>-->
+      <!--</div>-->
+      <div  class="col s12" ng-init="showMe = true" ng-show="showMe">
+        <div class="card">
+          <div class="card-content" style="padding-bottom: 10px !important;">
+            <span class="card-title">Marta Alerts</span>
+            <ul class="collection" style="border: none !important">
+              <li class="collection-item nb red-text text-darken-1"><i class="material-icons left red-text">warning</i>"I-85 has collapsed causing city-wide traffic delays.`"</li>
+              <li class="collection-item nb orange-text text-darken-1"><i class="material-icons left orange-text">warning</i>"This weekend, trains will run on a 15 minute frequency, all lines. Red/Gold lines will service the Airport."</li>
+              <li class="collection-item nb orange-text text-darken-1"><i class="material-icons left orange-text">warning</i>"Route 73; NB 8:38 AM trip from LaGrange Blvd. & Boat Rock Blvd. is delayed."</li>
+            </ul>
+          </div>
+          <div class="card-action">
+          <a href="#" ng-click="showMe = false">Dismiss</a>
+        </div>
+        </div>
+      </div>
+      <div  class="col s12">
+        <div class="card">
+          <div class="card-content" style="padding-bottom: 10px !important;">
+            <span class="card-title">My Breezecard</span>
+            <ul class="collection" style="border: none !important">
+              <li class="collection-item nb">Card: XXXX-9999<span class="right">Trips: 5</span></li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <a href="#" ui-sref="main.breezecard">Manage</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

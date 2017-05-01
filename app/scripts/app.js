@@ -20,30 +20,99 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.materialize'
   ])
-  .config(function ($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/');
+  .config([
+    '$stateProvider',
+    '$urlRouterProvider',
+    '$locationProvider',
+    function ($stateProvider, $urlRouterProvider, $locationProvider) {
+    //$locationProvider.html5Mode(true);
+
     $stateProvider
       .state('main', {
-        url: '/',
+        abstract: true,
         templateUrl: 'views/main/main.html',
         controller: 'MainCtrl'
       })
-      .state('main.list', {
-        url: 'main/list',
-        templateUrl: 'views/main/main.list.html',
-        controller: 'MainCtrl'
+      .state('main.dashboard', {
+        url: '/dashboard',
+        //templateUrl: 'views/main/dashboard.html',
+        //controller: 'MyCommuteCtrl',
+        parent: 'main',
+        views:{
+          'view':{
+            templateUrl: 'views/main/dashboard.html',
+            controller: 'MainCtrl'
+          }
+        }
       })
-      .state('example', {
-        url: '/example',
-        templateUrl: 'views/example/example.html',
-        controller: 'ExampleCtrl'
+      .state('main.myCommute', {
+        url: '/my-commute',
+        views:{
+          'view':{
+            templateUrl: 'views/main/myCommute.html',
+            controller: 'MyCommuteCtrl'
+          }
+        }
       })
-      .state('example.list', {
-        url: '/list',
-        templateUrl: 'views/example/example.list.html',
-        controller: 'ExampleCtrl'
-      });
+      .state('main.setupCommute', {
+        url: '/setup-commute',
+        //templateUrl: 'views/Commute/setupCommute.html',
 
+        views:{
+          'view':{
+            templateUrl: 'views/main/setupCommute.html',
+            controller: 'SetupCommuteCtrl'
+          }
+        }
+      })
+      .state('main.favorites', {
+        url: '/favorites',
+        views:{
+          'view':{
+            templateUrl: 'views/main/favorites.html',
+            controller: 'favoritesCtrl'
+          }
+        }
+
+      })
+      .state('main.schedules', {
+        url: '/schedules',
+        views:{
+          'view':{
+            templateUrl: 'views/main/schedules.html',
+            controller: 'scheduleCtrl'
+          }
+        }
+      })
+      .state('main.breezecard', {
+        url: '/my-breezecard',
+        views:{
+          'view':{
+            templateUrl: 'views/main/breezecard.html',
+            controller: 'breezecardCtrl'
+          }
+        }
+      });
+      $urlRouterProvider.otherwise('/dashboard');
+      // $urlRouterProvider.otherwise( function($injector, $location) {
+      //   var $state = $injector.get("$state");
+      //   $state.go("main.opportunities");
+      // });
+  }])
+  .run(function ($rootScope) {
+    $rootScope.prefs = {};
+    $rootScope.prefs.address = {};
+    $rootScope.prefs.workAddress = {};
+    $rootScope.prefs.days = [];
+    $rootScope.prefs.transit = [];
+    $rootScope.setupComplete = false;
+    $rootScope.hasFav = false;
+    $rootScope.prefs.stations = [];
+    $rootScope.transitData = {};
+    $rootScope.drivingData = {};
+    $rootScope.walkingData = {};
+    $rootScope.bikingData = {};
   });

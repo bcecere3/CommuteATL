@@ -1,19 +1,11 @@
-'use strict';
-
 /**
- * @ngdoc function
- * @name angularBoilerplateApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the angularBoilerplateApp
+ * Created by Brendan on 4/2/2017.
  */
-
+'use strict';
 angular.module('angularBoilerplateApp.controllers')
-  .controller('MainCtrl', function ($scope, trainService,$rootScope) {
-    //Get the new MARTA data
-    trainService.getTrainData();
+  .controller('MyCommuteCtrl', function ($scope,$rootScope) {
 
-    //Bools to know which transit items to show on page
+    //Bools to check which transportation items to list on page
     $scope.hasTrain = false;
     $scope.hasCar = false;
     $scope.hasWalk = false;
@@ -25,7 +17,7 @@ angular.module('angularBoilerplateApp.controllers')
           $scope.hasTrain = true;
         }
         else if($rootScope.prefs.transit[i] === "Car"){
-          $scope.hasCar = true;
+        $scope.hasCar = true;
         }
         else if($rootScope.prefs.transit[i] === "Bike"){
           $scope.hasBike = true;
@@ -38,11 +30,19 @@ angular.module('angularBoilerplateApp.controllers')
         }
       }
 
-      //Get trip duration data from Google API Object
+      //Get duration for each travel method from the Google API objects
       $scope.transitTime = $rootScope.transitData.routes[0].legs[0].duration.text;
       $scope.drivingTime = $rootScope.drivingData.routes[0].legs[0].duration.text;
       $scope.bikingTime = $rootScope.bikingData.routes[0].legs[0].duration.text;
       $scope.walkingTime = $rootScope.walkingData.routes[0].legs[0].duration.text;
-    }
 
+      //Set arrival times from API data
+      //Google only gives arrival time in Transit object. Had to blackbox the rest
+      //$scope.transitArrTime = $rootScope.transitData.routes[0].legs[0].arrival_time.text;
+      $scope.transitArrTime = "9:55am";
+      $scope.drivingArrTime = "10:15am";
+      $scope.bikingArrTime = "8:56am";
+      $scope.walkingArrTime = "10:06am";
+
+    }
   });

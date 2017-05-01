@@ -1,6 +1,22 @@
-<div class="container">
-  <h1>Main Controller</h1>
-  <p>main controller content</p>
-  <a ui-sref=".list">Show List</a>
-  <div ui-view></div>
-</div>
+<nav>
+  <div class="nav-wrapper">
+    <div class="col s12">
+      <a href="#" ui-sref="main.dashboard" class="brand-logo">CommuteATL</a>
+      <a href="#" data-activates="mobile-nav" class="button-collapse" data-sidenav="left" data-menuwidth="300" data-closeonclick="true"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a ui-sref="main.favorites">Favorites</a></li>
+        <li><a ui-sref="main.myCommute">My Commute</a></li>
+        <!--<li><a ui-sref="main.schedules">Transit Schedule</a></li>-->
+        <li><a ui-sref="main.breezecard">My Breezecard</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-nav">
+        <li><a ui-sref="main.dashboard">Dashboard</a></li>
+        <li><a ui-sref="main.favorites">Favorites</a></li>
+        <li><a ui-sref="main.myCommute">My Commute</a></li>
+        <!--<li><a ui-sref="main.schedules">Transit Schedule</a></li>-->
+        <li><a ui-sref="main.breezecard">My Breezecard</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div ui-view="view"></div>

@@ -1,0 +1,253 @@
+<div class="section occupyVH" ng-hide="setupComplete">
+  <div class="contrainer">
+    <div class="row">
+      <div class="col s12 center">
+        <h5 style="opacity: 0.54">Please set up your commute to begin:</h5>
+        <a ui-sref="main.setupCommute" class="btn-large waves-effect waves-light marta-blue white-text">SET UP COMMUTE</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section occupyVH" ng-show="setupComplete">
+  <div class="contrainer">
+    <div class="row">
+      <div class="col s12 center">
+        <h5 class="left" style="margin-top: 8px !important; padding-left: 8px">My Commute</h5>
+        <a class="btn-flat waves-effect waves-light marta-blue-text right" ui-sref="main.setupCommute">Edit<i class="material-icons left">edit</i></a>
+      </div>
+    </div>
+    <hr style="opacity: 0.22">
+    <div class="row">
+      <div class="col s12">
+        <ul class="collapsible popout" data-collapsible="accordion" watch>
+          <li class="active">
+            <div class="collapsible-header">Commute To Work Now<i class="material-icons right">arrow_drop_down</i> </div>
+            <div class="collapsible-body">
+              <ul class="collection">
+                <li class="collection-item avatar" ng-show="hasTrain">
+                  <i class="material-icons circle marta-blue">train</i>
+                  <span class="title">Via <b>Brookhaven Station</b></span>
+                  <p>Travel time: {{transitTime}}<br>Get there by: <span class="green-text">{{transitArrTime}}</span></p>
+                  <a href="#navModal" class="secondary-content" modal data-activates="navModal"><i class="material-icons marta-blue-text">send</i></a>
+                </li>
+                <li class="collection-item avatar" ng-show="hasBus">
+                  <i class="material-icons circle marta-blue">directions_bus</i>
+                  <span class="title">Via <b>Bus</b></span>
+                  <p>Travel time: {{transitTime}}<br>Get there by: <span class="green-text">{{transitArrTime}}</span></p>
+                  <a href="#navModal" class="secondary-content" modal data-activates="navModal"><i class="material-icons marta-blue-text" >send</i></a>
+                </li>
+                <li class="collection-item avatar" ng-show="hasCar">
+                  <i class="material-icons circle marta-blue">directions_car</i>
+                  <span class="title">Via <b>Car</b></span>
+                  <p><span class="alert red-text"><i class="material-icons left red-text">warning</i>Delay (+20min)</span><br>Travel time: 45 min<br>Get there by: <span class="red-text">{{drivingArrTime}}</span></p>
+                  <a href="#navModal" class="secondary-content" modal data-activates="navModal"><i class="material-icons marta-blue-text" >send</i></a>
+                </li>
+                <li class="collection-item avatar" ng-show="hasBike">
+                  <i class="material-icons circle marta-blue">directions_bike</i>
+                  <span class="title">Via <b>Bike</b></span>
+                  <p>Travel time: {{bikingTime}}<br>Get there by: <span class="red-text">{{bikingArrTime}}</span></p>
+                  <a href="#navModal" class="secondary-content" modal data-activates="navModal"> <i class="material-icons marta-blue-text">send</i></a>
+                </li>
+                <li class="collection-item avatar" ng-show="hasWalk">
+                  <i class="material-icons circle marta-blue">directions_walk</i>
+                  <span class="title">Via <b>Walking</b></span>
+                  <p>Travel time: {{walkingTime}}<br>Get there by: <span class="red-text">{{walkingArrTime}}</span></p>
+                  <a href="#navModal" class="secondary-content" modal data-activates="navModal"><i class="material-icons marta-blue-text">send</i></a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">Average Commute By Day<i class="material-icons right">arrow_drop_down</i> </div>
+            <div class="collapsible-body" style="min-height: 470px">
+              <ul tabs reload="allTabContentLoaded">
+                <li class="tab col s2"><a class="active" href="#m">M</a></li>
+                <li class="tab col s2"><a href="#t">T</a></li>
+                <li class="tab col s2"><a href="#w">W</a></li>
+                <li class="tab col s2"><a href="#th">Th</a></li>
+                <li class="tab col s2"><a href="#f">F</a></li>
+                <!--<li class="tab col s2"><a href="#ss">Sa/Su</a></li>-->
+              </ul>
+              <div id="m" class="col s12">
+                <ul class="collection">
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">train</i>
+                    <span class="title">Via <b>Midtown Station</b></span>
+                    <p>Avg travel time: 40min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_car</i>
+                    <span class="title">Via <b>Car</b></span>
+                    <p>Avg travel time: 25min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_bus</i>
+                    <span class="title">Via <b>Bus</b></span>
+                    <p>Avg travel time: 57min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_bike</i>
+                    <span class="title">Via <b>Bike</b></span>
+                    <p>Avg travel time: 1h 7min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_walk</i>
+                    <span class="title">Via <b>Walking</b></span>
+                    <p>Avg travel time: 2h 27min</p>
+                  </li>
+                </ul>
+              </div>
+              <div id="t" class="col s12">
+                <ul class="collection">
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">train</i>
+                    <span class="title">Via <b>Midtown Station</b></span>
+                    <p>Avg travel time: 40min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_car</i>
+                    <span class="title">Via <b>Car</b></span>
+                    <p>Avg travel time: 23min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_bus</i>
+                    <span class="title">Via <b>Bus</b></span>
+                    <p>Avg travel time: 54min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_bike</i>
+                    <span class="title">Via <b>Bike</b></span>
+                    <p>Avg travel time: 1h 6min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_walk</i>
+                    <span class="title">Via <b>Walking</b></span>
+                    <p>Avg travel time: 2h 30min</p>
+                  </li>
+                </ul>
+              </div>
+              <div id="w" class="col s12">
+                <ul class="collection">
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">train</i>
+                    <span class="title">Via <b>Midtown Station</b></span>
+                    <p>Avg travel time: 41min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_car</i>
+                    <span class="title">Via <b>Car</b></span>
+                    <p>Avg travel time: 30min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_bus</i>
+                    <span class="title">Via <b>Bus</b></span>
+                    <p>Avg travel time: 59min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_bike</i>
+                    <span class="title">Via <b>Bike</b></span>
+                    <p>Avg travel time: 1h 10min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_walk</i>
+                    <span class="title">Via <b>Walking</b></span>
+                    <p>Avg travel time: 2h 25min</p>
+                  </li>
+                </ul>
+              </div>
+              <div id="th" class="col s12">
+                <ul class="collection">
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">train</i>
+                    <span class="title">Via <b>Midtown Station</b></span>
+                    <p>Avg travel time: 41min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_car</i>
+                    <span class="title">Via <b>Car</b></span>
+                    <p>Avg travel time: 23min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_bus</i>
+                    <span class="title">Via <b>Bus</b></span>
+                    <p>Avg travel time: 51min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_bike</i>
+                    <span class="title">Via <b>Bike</b></span>
+                    <p>Avg travel time: 1h 8min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_walk</i>
+                    <span class="title">Via <b>Walking</b></span>
+                    <p>Avg travel time: 2h 31min</p>
+                  </li>
+                </ul>
+              </div>
+              <div id="f" class="col s12">
+                <ul class="collection">
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">train</i>
+                    <span class="title">Via <b>Midtown Station</b></span>
+                    <p>Avg travel time: 39min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_car</i>
+                    <span class="title">Via <b>Car</b></span>
+                    <p>Avg travel time: 21min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_bus</i>
+                    <span class="title">Via <b>Bus</b></span>
+                    <p>Avg travel time: 52min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_bike</i>
+                    <span class="title">Via <b>Bike</b></span>
+                    <p>Avg travel time: 1h 3min</p>
+                  </li>
+                  <li class="collection-item avatar">
+                    <i class="material-icons circle marta-blue">directions_walk</i>
+                    <span class="title">Via <b>Walking</b></span>
+                    <p>Avg travel time: 2h 29min</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="collapsible-header">My Commute Details<i class="material-icons right">arrow_drop_down</i> </div>
+            <div class="collapsible-body">
+              <div class="row">
+                <div class="col s12">
+                  <p><b>My Address</b></p>
+                  <p>{{prefs.address.line1}}<br> {{prefs.address.city}}, {{prefs.address.state}} {{prefs.address.zip}}<br></p>
+                  <hr>
+                  <p><b>Work Address</b></p>
+                  <p>{{prefs.workAddress.line1}}<br> {{prefs.workAddress.city}}, {{prefs.workAddress.state}} {{prefs.workAddress.zip}}<br></p>
+                  <hr>
+                  <p><b>Preferred Transit</b></p>
+                  <p ng-repeat="t in prefs.transit">{{t}}</p>
+                  <hr>
+                  <p><b>Commute Days</b></p>
+                  <p ng-repeat="day in prefs.days">{{day}}</p>
+
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="navModal" class="modal">
+  <div class="modal-content">
+    <p><b>Note From Developer:</b><br>
+      At this point Google navigation would open based on your work address and method of transit chosen.
+    </p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class=" modal-action modal-close waves-effect waves-light btn-flat grey-text">Ok!</a>
+  </div>
+</div>

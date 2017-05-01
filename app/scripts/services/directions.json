@@ -1,0 +1,620 @@
+{
+  "geocoded_waypoints": [
+    {
+      "geocoder_status": "OK",
+      "partial_match": true,
+      "place_id": "ChIJkYaLwAIG9YgRQ_GSN7N5ZIc",
+      "types": [
+        "street_address"
+      ]
+    },
+    {
+      "geocoder_status": "OK",
+      "partial_match": true,
+      "place_id": "ChIJDdmRwWYE9YgRG9PijMy2IOk",
+      "types": [
+        "street_address"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "bounds": {
+        "northeast": {
+          "lat": 33.8455977,
+          "lng": -84.3391324
+        },
+        "southwest": {
+          "lat": 33.7761755,
+          "lng": -84.38798299999999
+        }
+      },
+      "copyrights": "Map data ©2017 Google",
+      "legs": [
+        {
+          "arrival_time": {
+            "text": "11:03pm",
+            "time_zone": "America/New_York",
+            "value": 1493607789
+          },
+          "departure_time": {
+            "text": "10:08pm",
+            "time_zone": "America/New_York",
+            "value": 1493604494
+          },
+          "distance": {
+            "text": "7.4 mi",
+            "value": 11981
+          },
+          "duration": {
+            "text": "55 mins",
+            "value": 3295
+          },
+          "end_address": "85 5th St NE, Atlanta, GA 30308, USA",
+          "end_location": {
+            "lat": 33.7761755,
+            "lng": -84.3848289
+          },
+          "start_address": "1075 Lynmoor Dr NE, Atlanta, GA 30319, USA",
+          "start_location": {
+            "lat": 33.8444895,
+            "lng": -84.3448779
+          },
+          "steps": [
+            {
+              "distance": {
+                "text": "0.4 mi",
+                "value": 658
+              },
+              "duration": {
+                "text": "9 mins",
+                "value": 512
+              },
+              "end_location": {
+                "lat": 33.845069,
+                "lng": -84.339264
+              },
+              "html_instructions": "Walk to N Druid Hills Rd @ Lenox Park",
+              "polyline": {
+                "points": "agqmEnrxaOAWCc@?}@?iA?iB@oC?kE?iAIAkACQ?IAKEGEMKGKGMMe@YiAM_@j@UXOLGJIFGDIBIFQ@KDq@Bo@[??L"
+              },
+              "start_location": {
+                "lat": 33.8444895,
+                "lng": -84.3448779
+              },
+              "steps": [
+                {
+                  "distance": {
+                    "text": "0.2 mi",
+                    "value": 334
+                  },
+                  "duration": {
+                    "text": "4 mins",
+                    "value": 259
+                  },
+                  "end_location": {
+                    "lat": 33.8445099,
+                    "lng": -84.34125859999999
+                  },
+                  "html_instructions": "Head <b>east</b> on <b>Lynmoor Dr NE</b>",
+                  "polyline": {
+                    "points": "agqmEnrxaOAWCc@?}@?iA?iB@oC?kE?iA"
+                  },
+                  "start_location": {
+                    "lat": 33.8444895,
+                    "lng": -84.3448779
+                  },
+                  "travel_mode": "WALKING"
+                },
+                {
+                  "distance": {
+                    "text": "0.1 mi",
+                    "value": 173
+                  },
+                  "duration": {
+                    "text": "2 mins",
+                    "value": 129
+                  },
+                  "end_location": {
+                    "lat": 33.8455977,
+                    "lng": -84.34025339999999
+                  },
+                  "html_instructions": "Turn <b>left</b> to stay on <b>Lynmoor Dr NE</b>",
+                  "maneuver": "turn-left",
+                  "polyline": {
+                    "points": "egqmEz{waOIAkACQ?IAKEGEMKGKGMMe@YiAM_@"
+                  },
+                  "start_location": {
+                    "lat": 33.8445099,
+                    "lng": -84.34125859999999
+                  },
+                  "travel_mode": "WALKING"
+                },
+                {
+                  "distance": {
+                    "text": "446 ft",
+                    "value": 136
+                  },
+                  "duration": {
+                    "text": "2 mins",
+                    "value": 107
+                  },
+                  "end_location": {
+                    "lat": 33.8449317,
+                    "lng": -84.33919449999999
+                  },
+                  "html_instructions": "Turn <b>right</b> onto <b>Lenox Park Blvd NE</b>",
+                  "maneuver": "turn-right",
+                  "polyline": {
+                    "points": "_nqmEpuwaOj@UXOLGJIFGDIBIFQ@KDq@Bo@"
+                  },
+                  "start_location": {
+                    "lat": 33.8455977,
+                    "lng": -84.34025339999999
+                  },
+                  "travel_mode": "WALKING"
+                },
+                {
+                  "distance": {
+                    "text": "49 ft",
+                    "value": 15
+                  },
+                  "duration": {
+                    "text": "1 min",
+                    "value": 17
+                  },
+                  "end_location": {
+                    "lat": 33.845069,
+                    "lng": -84.339264
+                  },
+                  "html_instructions": "Turn <b>left</b> onto <b>N Druid Hills Rd NE</b><div style=\"font-size:0.9em\">Destination will be on the left</div>",
+                  "maneuver": "turn-left",
+                  "polyline": {
+                    "points": "yiqmE|nwaO[??L"
+                  },
+                  "start_location": {
+                    "lat": 33.8449317,
+                    "lng": -84.33919449999999
+                  },
+                  "travel_mode": "WALKING"
+                }
+              ],
+              "travel_mode": "WALKING"
+            },
+            {
+              "distance": {
+                "text": "0.9 mi",
+                "value": 1497
+              },
+              "duration": {
+                "text": "3 mins",
+                "value": 206
+              },
+              "end_location": {
+                "lat": 33.8336,
+                "lng": -84.34074
+              },
+              "html_instructions": "Bus towards 8 - Kensington STA",
+              "polyline": {
+                "points": "ujqmEjowaO?ED?^A|@?l@B\\FXNXVRRT`@`@v@^t@`@dAFNN`@f@r@`@f@r@p@x@n@j@\\RHHBr@Xx@VtBb@j@N~Br@B@\\PTJf@Td@NfAV^F~@L`A?zAi@^K^KNEn@Sd@Ob@QDATKnAq@RMDCd@]pA{@t@g@\\UDC`@[LKNMLMLORUPSLOT]HONYj@h@"
+              },
+              "start_location": {
+                "lat": 33.845069,
+                "lng": -84.339264
+              },
+              "transit_details": {
+                "arrival_stop": {
+                  "location": {
+                    "lat": 33.8336,
+                    "lng": -84.34074
+                  },
+                  "name": "N Druid Hills Rd NE @ Buford Hwy NE"
+                },
+                "arrival_time": {
+                  "text": "10:19pm",
+                  "time_zone": "America/New_York",
+                  "value": 1493605198
+                },
+                "departure_stop": {
+                  "location": {
+                    "lat": 33.845069,
+                    "lng": -84.339264
+                  },
+                  "name": "N Druid Hills Rd @ Lenox Park"
+                },
+                "departure_time": {
+                  "text": "10:16pm",
+                  "time_zone": "America/New_York",
+                  "value": 1493604992
+                },
+                "headsign": "8 - Kensington STA",
+                "line": {
+                  "agencies": [
+                    {
+                      "name": "Metropolitan Atlanta Rapid Transit Authority",
+                      "phone": "1 (404) 848-5000",
+                      "url": "http://www.itsmarta.com/"
+                    }
+                  ],
+                  "color": "#008000",
+                  "name": "North Druid Hills Rd.",
+                  "short_name": "8",
+                  "text_color": "#000000",
+                  "vehicle": {
+                    "icon": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png",
+                    "name": "Bus",
+                    "type": "BUS"
+                  }
+                },
+                "num_stops": 7
+              },
+              "travel_mode": "TRANSIT"
+            },
+            {
+              "distance": {
+                "text": "184 ft",
+                "value": 56
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 0
+              },
+              "end_location": {
+                "lat": 33.833721,
+                "lng": -84.340143
+              },
+              "html_instructions": "Walk to N Druid Hills Rd NE @ Buford Hwy NE",
+              "polyline": {
+                "points": "_comErxwaOWwB"
+              },
+              "start_location": {
+                "lat": 33.8336,
+                "lng": -84.34074
+              },
+              "steps": [
+                {
+                  "distance": {
+                    "text": "184 ft",
+                    "value": 56
+                  },
+                  "duration": {
+                    "text": "1 min",
+                    "value": 0
+                  },
+                  "end_location": {
+                    "lat": 33.833721,
+                    "lng": -84.340143
+                  },
+                  "polyline": {
+                    "points": "_comErxwaOWwB"
+                  },
+                  "start_location": {
+                    "lat": 33.8336,
+                    "lng": -84.34074
+                  },
+                  "travel_mode": "WALKING"
+                }
+              ],
+              "travel_mode": "WALKING"
+            },
+            {
+              "distance": {
+                "text": "2.3 mi",
+                "value": 3772
+              },
+              "duration": {
+                "text": "9 mins",
+                "value": 540
+              },
+              "end_location": {
+                "lat": 33.823072,
+                "lng": -84.36995
+              },
+              "html_instructions": "Bus towards 39 Buford Hwy - Lindbergh STA",
+              "polyline": {
+                "points": "wcomEztwaOiDiEVZ~CvD`CrCTXlJ|KJLfAtAhBvBpAzAxClD`AhAbFfGnAxAxCfDPRZ^V`@Vj@Jr@Nn@Fh@Ft@@d@?b@Gz@Ej@Eb@Ed@IbBAh@@h@LdBTx@`BlGDLZnAr@vCRz@Lx@Fx@Ax@AZC\\kAhG_@nBMl@Q|@Oz@c@bCSjA_@rBM`AEl@Cb@At@EhDCvCCdB?j@?jD?f@?jA?`B?V?f@TBBnBEdBUvAET]nCNPvFx@pAV^@dFK"
+              },
+              "start_location": {
+                "lat": 33.833721,
+                "lng": -84.340143
+              },
+              "transit_details": {
+                "arrival_stop": {
+                  "location": {
+                    "lat": 33.823072,
+                    "lng": -84.36995
+                  },
+                  "name": "Lindbergh Center Station"
+                },
+                "arrival_time": {
+                  "text": "10:40pm",
+                  "time_zone": "America/New_York",
+                  "value": 1493606400
+                },
+                "departure_stop": {
+                  "location": {
+                    "lat": 33.833721,
+                    "lng": -84.340143
+                  },
+                  "name": "N Druid Hills Rd NE @ Buford Hwy NE"
+                },
+                "departure_time": {
+                  "text": "10:31pm",
+                  "time_zone": "America/New_York",
+                  "value": 1493605860
+                },
+                "headsign": "39 Buford Hwy - Lindbergh STA",
+                "line": {
+                  "agencies": [
+                    {
+                      "name": "Metropolitan Atlanta Rapid Transit Authority",
+                      "phone": "1 (404) 848-5000",
+                      "url": "http://www.itsmarta.com/"
+                    }
+                  ],
+                  "color": "#00f200",
+                  "name": "Buford Highway",
+                  "short_name": "39",
+                  "text_color": "#000000",
+                  "vehicle": {
+                    "icon": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png",
+                    "name": "Bus",
+                    "type": "BUS"
+                  }
+                },
+                "num_stops": 10
+              },
+              "travel_mode": "TRANSIT"
+            },
+            {
+              "distance": {
+                "text": "161 ft",
+                "value": 49
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 49
+              },
+              "end_location": {
+                "lat": 33.8230549,
+                "lng": -84.36941539999999
+              },
+              "html_instructions": "Walk to Lindbergh Center Transit Station",
+              "polyline": {
+                "points": "eammEdo}aOBiB"
+              },
+              "start_location": {
+                "lat": 33.823072,
+                "lng": -84.36995
+              },
+              "steps": [
+                {
+                  "distance": {
+                    "text": "161 ft",
+                    "value": 49
+                  },
+                  "duration": {
+                    "text": "1 min",
+                    "value": 49
+                  },
+                  "end_location": {
+                    "lat": 33.8230549,
+                    "lng": -84.36941539999999
+                  },
+                  "polyline": {
+                    "points": "eammEdo}aOBiB"
+                  },
+                  "start_location": {
+                    "lat": 33.823072,
+                    "lng": -84.36995
+                  },
+                  "travel_mode": "WALKING"
+                }
+              ],
+              "travel_mode": "WALKING"
+            },
+            {
+              "distance": {
+                "text": "3.3 mi",
+                "value": 5268
+              },
+              "duration": {
+                "text": "6 mins",
+                "value": 360
+              },
+              "end_location": {
+                "lat": 33.781247,
+                "lng": -84.38634200000001
+              },
+              "html_instructions": "Metro rail towards Gold Southbound to Airport Station",
+              "polyline": {
+                "points": "aammEzk}aOCNTDt@Nr@Lt@Lt@Lt@Nr@L@?p@LB?^F@@@?@?@??@@?@?@?@??@@?@?@?@@@?@?@?@@@?@?@?@@@?@?@@@?@?@??@@?@?@?@??@@?@?@?@@@?@?@?@@@?@??@@?@?@?@??@@?@?@@@?@?@?@@@?@?@@@?@?@?@@@?@??@@?@?@?@@@?@??@@?@?@?@@@?@?@@@?@?@@@?@??@@?@?@?@@@?@??@@?@?@@@?@??@@?@?@?@@@?@@@?@??@@?@?@@@?@??@@?@??@@?@?@@@?@?@@@?@??@@?@@@?@@@?@?@@@?@@@??@@?@?@@@?@@@?@@@?@@@?@??@@??@@?@?@@@?@@@?@@@?@@@?@@@@@?@??@@?@@@??@@?@??@@?@@@??@@?@??@@?@@@?@@@?@@@@@?@@@@@?@@@?@@@@@?@@@@@?@@@@@?@@@@@?@@@@@?@@JF@@@@@??@@?@@@??@@?@@@@@??@@??@@?@??@@??@@?@@@??@@??@@??@@?@??@@?@@@@@@@?@@@@@@@?@@@@@@@@@?@@@@@@@??@@??@@?@??@@??@@??@@?@@@??@@??@@?@@@@@?@@@@@@@@@??@@??@@?@@@??@BBl@b@l@b@l@b@l@b@`@Z@?@@@@@??@@??@@?@@@@@??@@?@@@@@@@?@@?@@?@@@@@??@@?@@@??@@??@@??@@??@@?@@@@@??@@?@@@@@@@@@?@@@@@??@@??@@??@@?@??@@??@@??@@??@@?@@@@@??@@?@@@@@@@@@??@@?@@@??@@??@@??@@??@@?@@@??@@??@@?@@@@@@@@@?@@?@@?@@@??@@??@@??@@??@@?@@@??@@??@@??@@?@@@@@@@@@??@@?@@@@@??@@??@@??@@?@@@@@@@??@@??@@?@@@@@@@@@??@@??@@?@@@@@??@@??@@?@@@@@@BBl@d@l@d@j@d@j@d@l@d@j@d@l@d@j@d@l@d@TP@@@@@@@?@@?@@?@@@@@??@@??@@??@@??@@?@@@@@??@@?@@@@@@@@@??@@??@@?@@@@@??@@??@@??@@??@@?@@@@@@@?@@@@@@@@@??@@??@@?@@@??@@??@@??@@?@@@@@??@@?@@@@@@@?@@@@@@@@@??@@??@@?@??@@??@@??@@?@@@??@@??@@?@@@@@?@@@@@@@?@@@@@@@?@@@@@@@??@@?@@@??@@?@@@@@?@@@@@??@@??@@?@??@@??@@?@??@@??@@?@??@@??@@?@@@??@@?@??@@??@@?@@@??@@?@??@@??@@?@??@@?@@@??@@??@@?@??@@?@@@?@@@??@@?@@@@@?@@@?@@@?@@@@@?@@@@@?@@@?@@@??@@?@@@?@??@@??@@?@??@@?@??@@?@@@??@@?@?@@@@@?@@@?@@@?@@@?@@@??@@?@??@@?@??@@??@@?@?@@@??@@?@?@@@@@?@??@@?@??@@?@??@@??@@?@?@@@??@@?@?@@@@@?@?@@@@@?@??@@?@@@?@@@?@@@?@@@?@@@?@@@??@@?@??@@?@??@FBp@Xp@Xf@R@?@@@?@@@?@@@??@@?@??@@?@??@@?@@@?@@@?@?@@@@@?@@@??@@?@?@@@??@@?@?@@@@@?@?@@@??@@?@??@@?@??@@?@??@@??@@?@?@@@??@@?@?@@@@@?@@@?@@@??@@?@??@@?@??@@?@??@@?@@@??@@?@??@@?@@@?@@@?@@@??@@?@@@?@@@?@@@??@@??@@?@??@@?@??@@?@??@@??@@?@??@@??@@?@??@@?@@@??@@?@??@@??@@?@??@@?@??@@??@@?@??@@??@@?@??@@??@@?@@@??@@?@??@@??@@?@@@??@@??@@?@??@@??@@?@@@??@@??@@?@??@@?@@@@@@@?@@@@@??@@?@@@@@@@?@@@@@@@??@@??@@??@@?@@@??@@??@@??@@?@@@@@?@@@@@@@@@@@??@@??@@??@@??@@??@@?@@@@@??@@?@@@@@@@@@@@@@??@@??@@??@@??@@@@?@@?@@?@@?@@??@@??@@??@@??@@?@@@@@@@@@@?@@??@@??@@??@@??@@?@@?@@?@@?@@??@@??@@??@@??@@??@@@@@@@@@?@@??@@??@@??@@??@@??@@@@@@@@@?@@??@@??@@??@@@@@@B@??@@??@@??@@@@@@@?@@??@@@@@?@@??@@??@@@@@@@?@@??@@??@?@@??@@??@@@@@@@?@@??@@??@?@@??@@@@@@@?@@??@@??@?@@??@@??@@@@@?@@??@@@?@@??@@@@@?@@@@@@@?@@??@?@@??@@@@@?@@??@@@?@@??@@??@@@?@@@@@?@@??@?@@??@@??@@@?@@@@@@@?@@??@?@@??@@@@@?@@@?@@??@@??@?@@??@@@@@?@@@@@?@@??@?@@??@@@?@@@@@?@@??@@??@?@@??@@@@@?@@@@@?@@??@?@@??@@@?@@@@?Zj@`@r@`@r@`@r@`@r@`@r@`@p@`@r@@B@@@@?@@@?@@??@@@?@@@@@?@@??@@@?@@??@@@?@@@@@?@@??@@@?@@??@@@?@@@@@?@@??@@@?@@??@@@@@?@@@@@?@@??@?@@??@@@@@?@@@@@?@@??@@@?@@??@@@?@@@@@?@@??@@@?@@??@@@@@?@@??@@@?@@??@@@@@?@@@@@?@@??@?@@??@@??@@@?@@@@@?@@??@@??@?@@??@@@@@@@?@@@?@@??@HJb@p@`@p@b@p@b@p@b@p@b@r@`@p@b@p@JN@@@@?@@@?@@??@@??@?@@??@@@@@?@@??@@@?@@??@@??@@@?@@@@@@@?@@??@@@?@@??@@@@@?@@??@?@@??@@??@@@@@@@?@@@?@@??@@??@@@?@@??@@@@@?@@??@@@@@?@@??@@@@@?@@??@@@?@@??@@??@@@@@?@@??@@@?@@??@@??@@@@@@@?@@??@@??@?@@??@@@@@@@@@?@@??@@@@@?@@??@@@@@@@?@@??@@??@@@@@@@@@?@@??@@??@@??@@@?@@??@@??@@@@@@@@@?@@??@@??@@??@@@@@@@@@?@@??@@??@@??@@@@@@@@@@@@@?@@?@@@@@@@@@@@@?@@??@@??@@??@@??@@?@@@@?@@?@@?@@??@@??@@??@@??@@?@@@@@@@@@@@@@@@??@@??@@??@@??@@??@@?@@@@@@@@@@@??@@??@@??@@??@@??@@?@@@@@??@@@@?@@@@@@@??@@??@@??@@?@@@??@@??@@??@@?@@@@@?@@@@@@@@@?@@@@@@@??@@?@@@@@??@@?@@@??@@??@@?@??@@??@@?@??@@??@@??@@?@??@@??@@?@@@??@@?@??@@??@@?@@@??@@?@@@??@@?@??@@??@@?@??@@?@??@@??@@?@??@@??@@?@??@@?@@@?@@@??@@?@@@?@@@?@@@@@?@@@?@@@??@@?@??@@?@??@@?@@@?@@@??@@?@?@@@@@?@?@@@??@@?@??@@?@??@@?@@@?@@@?@?@@@?@@@??@@?@??@@?@?@@@?@@@?@??@@?@??@@?@?@@@?@@@?@?@@@??@@?@?@@@?@?@@@?@??@@?@?@@@?@??@@?@?@@@?@?@@@?@??@@?@?@@@?@?@@@?@?@@@?@??@@?@?@?@@@?@??@@?@?@?@@@?@?@@@?@?@??@@?@?@@@?@?@?@@@?@?@??@@?@?@?@??@@?@?@?@@@?@?@?@@@?@?@@@?@?@?@?@@@?@?@??@@?@?@?@?@@@?@?@?@@@?@?@?@?@@@?@?@?@??@@?@?@?@?@@@?@?@?@?@@@?@?@?@?@@@?@?@?@?@?@@@?@?@?@?@?@@@?@?@?@?@@@?@?@?@?@?@?@@@?@?@?@?@?@@@?@?@?@?@?@?@?@@@?@?@?@?@?@?@@@?@?@?@?@?@?@?@?@?@@@?@?@?@?@?@?@?@?@@@?@?@?@?@?@?@?@?@?@?@?@@@?@?@?@?@?@?@?@?@?@?@?@?@?@@@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@@@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?h@At@Av@?t@Av@At@?RA@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@??A@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@?@?@?@?@??A@?@?@?@?@?@?@?@?@?@?NA@?@?@?@?@?@??A@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?JA@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@??A@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?V?v@?t@?v@@v@?t@?D?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?P?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@??A@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@??A@?@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@??A@?@?@?@?@?@?@?@A@?@?@?@?@?@A@?@?@?@?@?@?@A@?@?@?@?@??A@?@?@?@?@?@?@A@?@?@?@?@A@?@?@?@?@?@A@?@?@?@?@??A@?@?@?@?@?@??A@?@?@?@?@A@?@?@?@?@?@A@?@?@?@??A@?@?JAt@It@It@It@Kv@IXCZEt@It@It@It@It@Kv@Ir@It@It@ID?@A@?@?@?@??A@?@?@?@?@?@A@?@?@?@?@A@?@?@?@?@?@A@?@?@?@??A@?@?@?@?@?@?@A@?@?@?@?@A@?@?@?@?@?@A@?@?@?@?@?@A@?@?@?@?@?@??A@?@?@?@?@?@??A@?@?@?@?@?@?@?@A@?@?@?@?@?@A@?@?@?@?@?@?@?@??A@?@?@?@?@?@?@??A@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@??A@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@?@?@AN?v@Ct@Cv@Ct@Av@Cj@C@?@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@?@?@?@A@?@?@?@?@?@?@?@?@?@?@A@?j@Cv@Ct@CLA?E"
+              },
+              "start_location": {
+                "lat": 33.8230549,
+                "lng": -84.36941539999999
+              },
+              "transit_details": {
+                "arrival_stop": {
+                  "location": {
+                    "lat": 33.781247,
+                    "lng": -84.38634200000001
+                  },
+                  "name": "Midtown Transit Station"
+                },
+                "arrival_time": {
+                  "text": "10:54pm",
+                  "time_zone": "America/New_York",
+                  "value": 1493607240
+                },
+                "departure_stop": {
+                  "location": {
+                    "lat": 33.8230549,
+                    "lng": -84.36941539999999
+                  },
+                  "name": "Lindbergh Center Transit Station"
+                },
+                "departure_time": {
+                  "text": "10:48pm",
+                  "time_zone": "America/New_York",
+                  "value": 1493606880
+                },
+                "headsign": "Gold Southbound to Airport Station",
+                "line": {
+                  "agencies": [
+                    {
+                      "name": "Metropolitan Atlanta Rapid Transit Authority",
+                      "phone": "1 (404) 848-5000",
+                      "url": "http://www.itsmarta.com/"
+                    }
+                  ],
+                  "color": "#d4a723",
+                  "name": "Gold",
+                  "text_color": "#000000",
+                  "vehicle": {
+                    "icon": "//maps.gstatic.com/mapfiles/transit/iw2/6/metro.png",
+                    "name": "Metro rail",
+                    "type": "SUBWAY"
+                  }
+                },
+                "num_stops": 2
+              },
+              "travel_mode": "TRANSIT"
+            },
+            {
+              "distance": {
+                "text": "0.4 mi",
+                "value": 681
+              },
+              "duration": {
+                "text": "9 mins",
+                "value": 538
+              },
+              "end_location": {
+                "lat": 33.7761755,
+                "lng": -84.3848289
+              },
+              "html_instructions": "Walk to 85 5th St NE, Atlanta, GA 30308, USA",
+              "polyline": {
+                "points": "y{dmEru`bOb@gA|@??kA`ABfDNHAJ?z@BN@|AFjBHJ@rBHnFV@_@JgE"
+              },
+              "start_location": {
+                "lat": 33.781247,
+                "lng": -84.38634200000001
+              },
+              "steps": [
+                {
+                  "distance": {
+                    "text": "115 ft",
+                    "value": 35
+                  },
+                  "duration": {
+                    "text": "1 min",
+                    "value": 24
+                  },
+                  "end_location": {
+                    "lat": 33.7807575,
+                    "lng": -84.3859781
+                  },
+                  "html_instructions": "Head <b>south</b> toward <b>Peachtree Pl NE</b>",
+                  "polyline": {
+                    "points": "y{dmEru`bOb@gA|@?"
+                  },
+                  "start_location": {
+                    "lat": 33.781247,
+                    "lng": -84.38634200000001
+                  },
+                  "travel_mode": "WALKING"
+                },
+                {
+                  "distance": {
+                    "text": "115 ft",
+                    "value": 35
+                  },
+                  "duration": {
+                    "text": "1 min",
+                    "value": 27
+                  },
+                  "end_location": {
+                    "lat": 33.780764,
+                    "lng": -84.385604
+                  },
+                  "html_instructions": "Turn <b>left</b> onto <b>Peachtree Pl NE</b>",
+                  "maneuver": "turn-left",
+                  "polyline": {
+                    "points": "wxdmEjs`bO?kA"
+                  },
+                  "start_location": {
+                    "lat": 33.7807575,
+                    "lng": -84.3859781
+                  },
+                  "travel_mode": "WALKING"
+                },
+                {
+                  "distance": {
+                    "text": "0.3 mi",
+                    "value": 503
+                  },
+                  "duration": {
+                    "text": "7 mins",
+                    "value": 403
+                  },
+                  "end_location": {
+                    "lat": 33.7762529,
+                    "lng": -84.3859899
+                  },
+                  "html_instructions": "Turn <b>right</b> onto <b>Cypress St NE</b>",
+                  "maneuver": "turn-right",
+                  "polyline": {
+                    "points": "wxdmE~p`bO`ABfDNHAJ?z@BN@|AFjBHJ@rBHnFV"
+                  },
+                  "start_location": {
+                    "lat": 33.780764,
+                    "lng": -84.385604
+                  },
+                  "travel_mode": "WALKING"
+                },
+                {
+                  "distance": {
+                    "text": "354 ft",
+                    "value": 108
+                  },
+                  "duration": {
+                    "text": "1 min",
+                    "value": 84
+                  },
+                  "end_location": {
+                    "lat": 33.7761755,
+                    "lng": -84.3848289
+                  },
+                  "html_instructions": "Turn <b>left</b> onto <b>5th St NE</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+                  "maneuver": "turn-left",
+                  "polyline": {
+                    "points": "q|cmEls`bO@_@JgE"
+                  },
+                  "start_location": {
+                    "lat": 33.7762529,
+                    "lng": -84.3859899
+                  },
+                  "travel_mode": "WALKING"
+                }
+              ],
+              "travel_mode": "WALKING"
+            }
+          ],
+          "traffic_speed_entry": [],
+          "via_waypoint": []
+        }
+      ],
+      "overview_polyline": {
+        "points": "agqmEnrxaOE{@?gC@oOqBGSKUWUs@g@iBdAe@XQLQJ[F}@Bo@[??L?Ed@AjBB\\FXNl@j@v@xA`AzBVp@hAzAlB`B~@f@|@\\x@VtBb@jDbA~At@lBf@~AT`A?zAi@~@WhC{@~BmAxF{Dx@w@r@y@^m@NYj@h@WwBiDiEvDrEpOxQpDlEjFhGdHpIhF`Gl@r@n@lAZbBN~A@hAMfBKhAKlCNnCvBfIhBpHTrBCtAC\\kAhGm@|CyAhIm@tDIpAKvJCpC?rE?lFTBBnBEdBUvAET]nCNPvFx@pAV^@dFKBiBCNTDhB\\jBZ|Cj@j@HHBTDh@JtAXpAb@nAj@tAx@fJzGnCtBrPvMhAx@jAr@jAn@nAj@lHzCnAl@hAp@fAx@dA~@`AfAz@lAhCjEvIfOzK`Qz@jA~@fAbA`AhAz@jAr@nAj@pAd@pAZtATtANvAJvABrNIxDIxDMvAAzJ@hB?vACtAGtAMp]wDnDWrNa@j@C~@ElBGLA?Eb@gA|@??kA`ABpDLfABdFTbJ`@LgF"
+      },
+      "summary": "",
+      "warnings": [
+        "Walking directions are in beta.    Use caution – This route may be missing sidewalks or pedestrian paths."
+      ],
+      "waypoint_order": []
+    }
+  ],
+  "status": "OK"
+}

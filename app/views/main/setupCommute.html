@@ -1,0 +1,78 @@
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div  class="col s12">
+        <h4>Set Up My Commute</h4>
+      </div>
+    </div>
+    <form novalidate class="setup-form">
+      <div class="row">
+        <p class="marta-blue">What is your home address?</p>
+        <div class="col s12" input-field>
+          <input type="text" ng-model="prefs.address.line1">
+          <label>Street Address</label>
+        </div>
+        <div class="col s12" input-field>
+          <input type="text" ng-model="prefs.address.city">
+          <label>City</label>
+        </div>
+        <div class="col s6" input-field>
+          <input type="text" ng-model="prefs.address.state">
+          <label>State <em>(Ex. GA)</em></label>
+        </div>
+        <div class="col s6" input-field>
+          <input type="text" ng-model="prefs.address.zip">
+          <label>ZIP Code</em></label>
+        </div>
+        <p class="marta-blue">What is your work address?</p>
+        <div class="col s12" input-field>
+          <input type="text" ng-model="prefs.workAddress.line1">
+          <label>Street Address</label>
+        </div>
+        <div class="col s12" input-field>
+          <input type="text" ng-model="prefs.workAddress.city">
+          <label>City</label>
+        </div>
+        <div class="col s6" input-field>
+          <input type="text" ng-model="prefs.workAddress.state">
+          <label>State <em>(Ex. GA)</em></label>
+        </div>
+        <div class="col s6" input-field>
+          <input type="text" ng-model="prefs.workAddress.zip">
+          <label>ZIP Code</em></label>
+        </div>
+        <p class="marta-blue">What time do you like to get to work?</p>
+        <div class="col s12" input-field>
+          <input type="time" ng-model="prefs.arrivalTime">
+        </div>
+        <p class="marta-blue">What time do you leave work?</p>
+        <div class="col s12" input-field>
+          <input type="time" ng-model="prefs.departTime">
+        </div>
+        <p class="marta-blue">What is your preferred method of transit?</p>
+        <div class="col s12" input-field>
+          <select class="" ng-model="prefs.transit" material-select multiple>
+            <option value="Train">Train</option>
+            <option value="Bus">Bus</option>
+            <option value="Car">Car</option>
+            <option value="Bike">Bike</option>
+            <option value="Walk">Walk</option>
+          </select>
+        </div>
+        <p class="marta-blue">What days of the week do you commute?</p>
+        <div class="col s12" input-field>
+          <select class="" ng-model="prefs.days" material-select multiple>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+        </div>
+        <input ui-sref="main.myCommute" type="submit" ng-click="updatePrefs(prefs)" value="Save" class="btn marta-orange" />
+      </div>
+    </form>
+  </div>
+</div>

@@ -17,3 +17,83 @@
 .brand-logo {
   margin-left: 1%;
 }
+a.marta-blue{
+  background-color: #0193cf;
+}
+i.marta-blue{
+  background-color: #0193cf !important;
+}
+.marta-blue{
+  color: #0193cf;
+}
+.marta-blue-text{
+  color: #0193cf;
+}
+.collapsible-body p{
+  padding: 0 !important;
+}
+.collapsible.popout > li{
+  margin: 0 10px;
+  .collapsible-header{
+    min-height: 4rem;
+    line-height: 4rem;
+    background-color: #eeeeee;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+.collection-item.nb{
+  padding-left: 0 !important;
+}
+.card-action{
+  a{
+    color: #0193cf !important;
+  }
+}
+.tab{
+  a{
+    color: #0193cf !important;
+    &.active{
+      background-color: #0193cf !important;
+      color: white !important;
+    }
+  }
+}
+.tabs{
+  .indicator{
+    background-color: #0193cf;
+  }
+}
+.alert{
+  i{
+    font-size: 20px;
+    margin-right: 5px;
+  }
+}
+.occupyVH{
+  min-height: 86vh;
+}
+footer.page-footer{
+  background-color: #f27121;
+  padding-top: 0 !important;
+}
+.marta-orange{
+  background-color: #f27121;
+}
+.nav-wrapper{
+  background-color: #f27121;
+}
+.fixed-action-btn{
+  right: 30px;
+  bottom: 80px;
+}
+#addFav>form>.modal-content{
+  min-height: 60vh;
+}
+.custom-i{
+  font-size: 36px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
